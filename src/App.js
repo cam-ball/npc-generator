@@ -47,8 +47,11 @@ function App() {
     {showTable && (
       <Table
         adjectives={adjectives}
+        adj={adj}
         descriptors={descriptors}
+        desc={desc}
         quirks={quirks}
+        quirk={quirk}
       />
     )}
     </div>
