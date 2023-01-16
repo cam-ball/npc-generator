@@ -1,38 +1,45 @@
-.App {
+/* Color scheme from SeesawSiya */
+/* https://www.tumblr.com/color-palettes/706444575930253312 */
+:root {
+  --brown: #120d09;
+  --burgundy: #691f2c;
+  --khaki: #e6ad78;
+  --sand: #f1dcbf;
+  --aqua: #68b1a6;
+}
+
+body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App {
+  background-color: var(--brown);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--sand);
 }
 
-.App-link {
-  color: #61dafb;
+table {
+ border: 5px var(--burgundy) groove;
+ border-collapse: collapse;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+thead {
+  color: var(--sand);
+  background-color: var(--burgundy);
+}
+
+th {
+  border-right: 1px var(--brown) solid;
+}
+
+td {
+  border: 1px var(--burgundy) solid;
+}
+
+th, td {
+  padding: 0.5rem;
 }
