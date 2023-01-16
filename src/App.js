@@ -1,3 +1,4 @@
+import './App.css';
 import data from "./constants.json";
 import Table from "./components/table";
 import Generator from "./components/generator";
@@ -22,27 +23,32 @@ function App() {
 
   return (
     <div className="App">
-      <Generator
-        adjectives={adjectives}
-        adj={adj}
-        descriptors={descriptors}
-        desc={desc}
-        quirks={quirks}
-        quirk={quirk}
-        handleReroll={reroll}
-        toggleTable={setShowTable}
-        showTable={showTable}
-      />
-      {showTable && (
-        <Table
+      <div className="content">
+        <Generator
           adjectives={adjectives}
           adj={adj}
           descriptors={descriptors}
           desc={desc}
           quirks={quirks}
           quirk={quirk}
+          handleReroll={reroll}
+          toggleTable={setShowTable}
+          showTable={showTable}
         />
-      )}
+        {showTable && (
+          <Table
+            adjectives={adjectives}
+            adj={adj}
+            descriptors={descriptors}
+            desc={desc}
+            quirks={quirks}
+            quirk={quirk}
+          />
+        )}
+      </div>
+    <footer>
+      Made with ♥ by <a href='https://camball.me'>cam-ball</a>
+    </footer>
     </div>
   );
 }
