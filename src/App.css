@@ -8,12 +8,16 @@
   --aqua: #68b1a6;
 }
 
+html {
+  text-align: center;
+  background: var(--brown);
+}
 body {
   text-align: center;
+  background: var(--brown);
 }
 
 .App {
-  background-color: var(--brown);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -42,4 +46,8 @@ td {
 
 th, td {
   padding: 0.5rem;
+}
+
+.keyword {
+  color: var(--aqua);
 }

@@ -1,39 +1,31 @@
 import './App.css';
 import data from './constants.json';
+import Table from './components/table';
 
-function App() {
-  return (
-    <div className="App">
-      <table>
-        <thead>
-          <tr>
-            <th>Roll</th>
-            <th>Adjective</th>
-            <th>Primary Descriptor</th>
-            <th>Quirk</th>
-          </tr>
-        </thead>
-      <tbody>
-        <TableData />
-      </tbody>
-      </table>
-    </div>
-  );
+const roll = () => {
+  return Math.floor(Math.random() * 20);
 }
 
-const TableData = () => {
-  const tableRows = [];
-  for (let i = 0; i < 20; i++) {
-    tableRows.push(
-      <tr key={i+1}>
-        <td>{i+1}</td>
-        <td>{data.adjectives[i]}</td>
-        <td>{data.descriptors[i]}</td>
-        <td>{data.quirks[i]}</td>
-      </tr>
-    )
-  }
-  return tableRows
+const Sentence = ({adjective, descriptor, quirk}) => {
+  return (
+    <h2>
+      A <span className="keyword">{adjective}</span> <span className="keyword">{descriptor}</span> who <span className="keyword">{quirk}</span>.
+    </h2>
+  )
+}
+
+function App() {
+  const {adjectives, descriptors, quirks} = data;
+  const adj = roll();
+  const desc = roll();
+  const quirk = roll();
+
+  return (
+    <div className="App">
+      <Sentence adjective={adjectives[adj]} descriptor={descriptors[desc]} quirk={quirks[quirk]} />
+      <Table />
+    </div>
+  );
 }
 
 export default App;
