@@ -12,17 +12,19 @@ const Table = ({ adjectives, descriptors, quirks }) => {
   }
 
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Roll</th>
-          <th>Adjective</th>
-          <th>Primary Descriptor</th>
-          <th>Quirk</th>
-        </tr>
-      </thead>
-      <tbody>{tableRows}</tbody>
-    </table>
+    <div className="rolltable">
+      <table>
+        <thead>
+          <tr>
+            <th>Roll</th>
+            <th>Adjective</th>
+            <th>Primary Descriptor</th>
+            <th>Quirk</th>
+          </tr>
+        </thead>
+        <tbody>{tableRows}</tbody>
+      </table>
+    </div>
   );
 };
 

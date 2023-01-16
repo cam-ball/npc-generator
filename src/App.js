@@ -22,6 +22,7 @@ function App() {
   const [adj, setAdj] = useState(roll());
   const [desc, setDesc] = useState(roll());
   const [quirk, setQuirk] = useState(roll());
+  const [showTable, setShowTable] = useState(false);
 
   const reroll = () => {
     setAdj(roll());
@@ -38,13 +39,18 @@ function App() {
           descriptor={descriptors[desc]}
           quirk={quirks[quirk]}
         />
-        <button onClick={() => reroll()}>hit me again</button>
+        <div className="buttons">
+          <button onClick={() => reroll()}>hit me again</button>
+          <button onClick={() => setShowTable(!showTable)}>show me the table</button>
+        </div>
       </div>
+    {showTable && (
       <Table
         adjectives={adjectives}
         descriptors={descriptors}
         quirks={quirks}
       />
+    )}
     </div>
   );
 }

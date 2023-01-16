@@ -16,14 +16,18 @@ body {
 
 .App {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   color: var(--sand);
 }
 
 /* Table styles */
+
+.rolltable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 table {
   border: 5px var(--burgundy) groove;
   border-collapse: collapse;
@@ -50,12 +54,13 @@ td {
 /* Generator styles */
 .generator {
   padding: 1rem;
+  margin-top: 6rem;
 }
 
 .generator h2 {
   font-size: 4rem;
   margin-top: .5rem;
-  min-height: 50vh;
+  min-height: 35vh;
 }
 
 .leader {
@@ -67,6 +72,10 @@ td {
 .keyword {
   color: var(--aqua);
   text-decoration: underline;
+}
+
+button + button {
+  margin-left: 1rem;
 }
 
 button {
