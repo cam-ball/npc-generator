@@ -51,4 +51,24 @@ td {
 
 .keyword {
   color: var(--aqua);
+  text-decoration: underline;
+}
+
+.generator {
+  padding: 1rem;
+}
+
+button {
+  background-color: var(--khaki);
+  border: 1px var(--aqua);
+  border-radius: 5px;
+  padding: 0.5rem;
+  color: var(--brown);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--burgundy);
+  color: var(--sand);
 }
