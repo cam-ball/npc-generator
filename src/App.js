@@ -22,8 +22,16 @@ function App() {
 
   return (
     <div className="App">
-      <Sentence adjective={adjectives[adj]} descriptor={descriptors[desc]} quirk={quirks[quirk]} />
-      <Table />
+      <Sentence 
+        adjective={adjectives[adj]} 
+        descriptor={descriptors[desc]} 
+        quirk={quirks[quirk]} 
+      />
+      <Table 
+        adjectives={adjectives} 
+        descriptors={descriptors} 
+        quirks={quirks}
+      />
     </div>
   );
 }

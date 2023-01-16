@@ -1,14 +1,12 @@
-import data from '../constants.json';
-
-const Table = () => {
+const Table = ({adjectives, descriptors, quirks}) => {
   const tableRows = [];
   for (let i = 0; i < 20; i++) {
     tableRows.push(
       <tr key={i+1}>
         <td>{i+1}</td>
-        <td>{data.adjectives[i]}</td>
-        <td>{data.descriptors[i]}</td>
-        <td>{data.quirks[i]}</td>
+        <td>{adjectives[i]}</td>
+        <td>{descriptors[i]}</td>
+        <td>{quirks[i]}</td>
       </tr>
     )
   }
