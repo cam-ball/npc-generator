@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/npc-generator/static/css/main.e1c5d779.css",
+    "main.js": "/npc-generator/static/js/main.87be9fbe.js",
+    "index.html": "/npc-generator/index.html",
+    "main.e1c5d779.css.map": "/npc-generator/static/css/main.e1c5d779.css.map",
+    "main.87be9fbe.js.map": "/npc-generator/static/js/main.87be9fbe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1c5d779.css",
+    "static/js/main.87be9fbe.js"
+  ]
+}
