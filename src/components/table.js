@@ -1,17 +1,17 @@
-const Table = ({adjectives, descriptors, quirks}) => {
+const Table = ({ adjectives, descriptors, quirks }) => {
   const tableRows = [];
   for (let i = 0; i < 20; i++) {
     tableRows.push(
-      <tr key={i+1}>
-        <td>{i+1}</td>
+      <tr key={i + 1}>
+        <td>{i + 1}</td>
         <td>{adjectives[i]}</td>
         <td>{descriptors[i]}</td>
         <td>{quirks[i]}</td>
       </tr>
-    )
+    );
   }
 
-  return(
+  return (
     <table>
       <thead>
         <tr>
@@ -21,11 +21,9 @@ const Table = ({adjectives, descriptors, quirks}) => {
           <th>Quirk</th>
         </tr>
       </thead>
-      <tbody>
-        {tableRows}
-      </tbody>
+      <tbody>{tableRows}</tbody>
     </table>
   );
-}
+};
 
 export default Table;

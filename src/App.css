@@ -27,8 +27,8 @@ body {
 }
 
 table {
- border: 5px var(--burgundy) groove;
- border-collapse: collapse;
+  border: 5px var(--burgundy) groove;
+  border-collapse: collapse;
 }
 
 thead {
@@ -44,7 +44,8 @@ td {
   border: 1px var(--burgundy) solid;
 }
 
-th, td {
+th,
+td {
   padding: 0.5rem;
 }
 
