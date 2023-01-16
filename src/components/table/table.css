@@ -1,0 +1,39 @@
+/* Table styles */
+
+.rolltable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  border: 5px var(--burgundy) groove;
+  border-collapse: collapse;
+}
+
+thead {
+  color: var(--sand);
+  background-color: var(--burgundy);
+}
+
+th {
+  border-right: 1px var(--brown) solid;
+}
+
+td {
+  border: 1px var(--burgundy) solid;
+}
+
+th,
+td {
+  padding: 0.5rem;
+}
+
+/* small-screen tweaks */
+@media (max-width: 600px) {
+  th,
+  td {
+    padding: 0.25rem;
+  }
+}

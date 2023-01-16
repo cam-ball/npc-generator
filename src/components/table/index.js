@@ -1,6 +1,8 @@
+import "./table.css";
+
 const Table = ({ adjectives, adj, descriptors, desc, quirks, quirk }) => {
   const cellClass = (attr, index) => {
-    return (attr === index) ? 'highlight' : null;
+    return attr === index ? "highlight" : null;
   };
   const tableRows = [];
   for (let i = 0; i < 20; i++) {
