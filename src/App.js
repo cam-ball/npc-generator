@@ -32,6 +32,7 @@ function App() {
   return (
     <div className="App">
       <div className="generator">
+        <span className="leader">What about a...</span>
         <Sentence
           adjective={adjectives[adj]}
           descriptor={descriptors[desc]}

@@ -8,13 +8,10 @@
   --aqua: #68b1a6;
 }
 
-html {
-  text-align: center;
-  background: var(--brown);
-}
 body {
   text-align: center;
   background: var(--brown);
+  color: var(--khaki);
 }
 
 .App {
@@ -26,6 +23,7 @@ body {
   color: var(--sand);
 }
 
+/* Table styles */
 table {
   border: 5px var(--burgundy) groove;
   border-collapse: collapse;
@@ -49,21 +47,35 @@ td {
   padding: 0.5rem;
 }
 
+/* Generator styles */
+.generator {
+  padding: 1rem;
+}
+
+.generator h2 {
+  font-size: 4rem;
+  margin-top: .5rem;
+  min-height: 50vh;
+}
+
+.leader {
+  display: block;
+  text-align: left;
+  font-size: 2rem;
+}
+
 .keyword {
   color: var(--aqua);
   text-decoration: underline;
 }
 
-.generator {
-  padding: 1rem;
-}
-
 button {
   background-color: var(--khaki);
+  color: var(--brown);
+  font-size: 1rem;
   border: 1px var(--aqua);
   border-radius: 5px;
   padding: 0.5rem;
-  color: var(--brown);
   cursor: pointer;
   transition: 0.3s;
 }
@@ -71,4 +83,21 @@ button {
 button:hover {
   background-color: var(--burgundy);
   color: var(--sand);
+}
+
+/* small-screen tweaks */
+@media (max-width: 600px) {
+  .generator h2 {
+    font-size: 2rem;
+    min-height: 25vh;
+  }
+
+  .leader {
+    font-size: 1rem;
+  }
+
+  th,
+  td {
+    padding: 0.25rem;
+  }
 }
