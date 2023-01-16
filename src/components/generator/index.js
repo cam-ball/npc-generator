@@ -21,6 +21,8 @@ const Generator = ({
   toggleTable,
   showTable,
 }) => {
+  const buttonText = showTable ? "table begone" : "show me the table";
+
   return (
     <div className="generator">
       <span className="leader">What about a...</span>
@@ -31,9 +33,7 @@ const Generator = ({
       />
       <div className="buttons">
         <button onClick={() => handleReroll()}>hit me again</button>
-        <button onClick={() => toggleTable(!showTable)}>
-          show me the table
-        </button>
+        <button onClick={() => toggleTable(!showTable)}>{buttonText}</button>
       </div>
     </div>
   );
