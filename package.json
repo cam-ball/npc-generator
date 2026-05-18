@@ -13,9 +13,8 @@
     "vite-tsconfig-paths": "^6.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject",
+    "start": "vite",
+    "build": "tsc && vite build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
