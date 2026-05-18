@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "deploy": "gh-pages -d build"
   },
   "browserslist": {
@@ -30,6 +30,10 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "@eslint/js": "^9.39.4",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react": "^7.37.5",
+    "gh-pages": "^5.0.0",
+    "globals": "^17.6.0"
   }
 }

@@ -1,4 +1,4 @@
-import './App.css';
+import "./App.css";
 import data from "./constants.json";
 import Table from "./components/table";
 import Generator from "./components/generator";
@@ -46,9 +46,9 @@ function App() {
           />
         )}
       </div>
-    <footer>
-      Made with ♥ by <a href='https://camball.me'>cam-ball</a>
-    </footer>
+      <footer>
+        Made with ♥ by <a href="https://camball.me">cam-ball</a>
+      </footer>
     </div>
   );
 }
